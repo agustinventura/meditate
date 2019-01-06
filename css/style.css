@@ -1,0 +1,339 @@
+/* Colors from Learn Meditation 5 theme: https://color.adobe.com/es/Learn-Meditation-5-color-theme-1798650/ 
+* white: #FFFFFF (CHANGED TO #F0F0EC)
+* lightest-green: #EAFFD9
+* lighter-green: #B7E8BF
+* dark-green: #86D19E
+* darkest-green: #4FA87B
+*/
+body {
+	font-family: 'Arial';
+	font-weight: 100;
+	color: #4FA87B;
+}
+
+.clock {
+	position: relative;
+	width: 360px;
+	height: 360px;
+	background-color: #F0F0EC;
+	border-radius: 50%;
+	overflow-x: hidden;
+}
+
+.container {
+	box-sizing: border-box;
+	display: flex;
+	display: -webkit-flex;
+	height: 100%;
+	width: 100%;
+	flex-direction: column;
+	flex-direction: -webkit-column;
+	align-items: center;
+	align-items: -webkit-center;
+	align-content: center;
+	align-content: -webkit-center;
+	justify-content: center;
+	justificy-content: -webkit-center;
+}
+
+.btntop {
+	box-sizing: border-box;
+    text-align: center;
+    color: #EAFFD9;
+    background: none;
+    background-color: #86D19E;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin: 0;
+    outline: 0;
+    position: absolute;
+    top: -100px;
+    width: 100%;
+    height: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 100px;
+    border-top: 0;
+    border-bottom: 1px solid #4FA87B;
+}
+
+.btntop:hover {
+	background-color: #4FA87B;
+}
+
+.btnbottom {
+	box-sizing: border-box;
+	text-align: center;
+	color: #EAFFD9;
+	background: none;
+	background-color: #86D19E;
+	text-transform: uppercase;
+	border-radius: 50%;
+	margin: 0;
+	outline: 0;
+	position: absolute;
+	width: 100%;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 20px;
+	top: 260px;
+	bottom: 0;
+	border-top: 1px solid #4FA87B;
+	border-bottom: 0;
+}
+
+.btnbottom:hover {
+	background-color: #4FA87B;
+}
+
+.btnleft {
+	box-sizing: border-box;
+    text-align: right;
+    color: #F2EBD5;
+    background: none;
+    background-color: #D95A11;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin: 0;
+    outline: 0;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    border-right: 1px solid #BF1111;
+    right: 270px;
+    padding-right: 40px;
+}
+
+.btnleft:hover {
+	background-color: #BF1111;
+}
+
+.btnright {
+	box-sizing: border-box;
+    text-align: left;
+    color: #F2EBD5;
+    background: none;
+    background-color: #D95A11;
+    text-transform: uppercase;
+    border-radius: 50%;
+    margin: 0;
+    outline: 0;
+    position: absolute;
+    height: 100%;
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    border-left: 1px solid #BF1111;
+    left: 270px;
+    padding-left: 20px;
+}
+
+.btnright:hover {
+	background-color: #BF1111;
+}
+
+.titletop {
+	position: absolute;
+	top: -100px;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	border-radius: 50%;
+	border-bottom: 3px solid #D95A11;
+	background-color: #F2AE30;
+	color: #F2EBD5;
+}
+
+.decrease {
+	position: absolute;
+    top: 130px;
+    left: 70px;
+}
+
+.increase {
+	position: absolute;
+    top: 130px;
+    left: 255px;
+}
+
+.titletop p {
+	position: absolute;
+    top: 130px;
+    left: 80px;
+    width: 200px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;	
+}
+
+.titletop table {
+	position: absolute;
+    top: 115px;
+    left: 100px;
+    width: 150px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;	
+}
+
+.txt {
+	width: 100%;
+	text-align: center;
+}
+
+.txt-msg {
+	font-size: 32px;
+}
+
+.txt-msg-center {
+	font-size: 48px;
+	font-weight: bold;
+}
+
+.firstColumn {
+	padding-right: 5px;
+}
+
+.thirdColumn {
+	padding-left: 5px;
+}
+
+.magnitude {
+	float: left;
+    padding-left: 95px;
+}
+
+.unit {
+	width: 20%;
+    float: right;
+    padding-top: 55px;
+    padding-right: 25px;
+}
+
+.sumUpData {
+	width: 100%;
+}
+
+.sumUpTitle {
+	font-size: 32px;
+	font-weight: bold;
+	color: #F28F16;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+.leftCell {
+	text-align: right;
+	width: 40%;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+	padding: 0px 10px 5px 0px;
+}
+
+.rightCell {
+	text-align: left;
+	width: 30%;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+	padding: 0px 0px 5px 10px;
+}
+
+.txt-msg-countdown {
+	font-size: 148px;
+	font-weight: bold;
+}
+
+.txt-msg-bpm {
+	font-size: 48px;
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+/*.txt-title {
+	text-transform: uppercase;
+	font-size: 32px;
+	font-weight: 200;
+	color: #0388A6;
+}
+
+.txt-title-previous-training {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 200;
+	color: #0388A6;
+}
+
+.txt-data {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 600;
+	color: #0388A6;
+	padding: 5px;
+}
+
+.selectedTraining {
+	padding-bottom: 20px;
+}
+
+.sumUpData {
+	width: 100%;
+	font-size: 22px;
+}
+
+.leftCell {
+	text-align: right;
+	width: 40%;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+	padding: 0px 10px 5px 0px;
+}
+
+.rightCell {
+	text-align: left;
+	width: 40%;
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+	padding: 0px 0px 5px 10px;
+}
+
+.previousTrainingData {
+	width: 100%;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+ul {
+	width: 100%;
+}
+
+ul li {
+	font-size: 28px;
+	color: #BBF2F2;
+	background: none;
+	background-color: #03A696;
+	padding: 5px 0px 5px 0px;
+	border-top: 5px solid #04D9D9;
+	border-bottom: 5px solid #04D9D9;
+	margin: 5px 0px;
+	width: 100%;
+}
+
+ul li:hover {
+	background-color: #0388A6;
+}
+
+.scrollableList {
+	overflow-y: scroll;
+	width: 100%;
+	height: 280px;
+}
+
+.trainings {
+	padding-bottom: 80px;
+}*/
