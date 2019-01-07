@@ -25,6 +25,7 @@ function setTimeScreenListeners() {
 	setClickListener($("#minutes"), selectMinutes);
 	setClickListener($("#downArrowTimeDecaminutes"), decreaseDecaminutes);
 	setClickListener($("#downArrowTimeMinutes"), decreaseMinutes);
+	setClickListener($("#timeDone"), setTime);
 }
 
 function increaseDecaminutes() {
@@ -80,4 +81,9 @@ function increaseTime() {
         times.set(selectedTime, time);
         $("#"+selectedTime).text(times.get(selectedTime));
     }
+}
+
+function setTime() {
+	meditationTime = times.get(TimesEnum.DECAMINUTES) + "" + times.get(TimesEnum.MINUTES);
+	showCountdownScreen();
 }

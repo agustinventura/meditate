@@ -192,11 +192,6 @@ body {
 	font-weight: bold;
 }
 
-.txt-msg-countdown {
-	font-size: 148px;
-	font-weight: bold;
-}
-
 .magnitude {
 	float: left;
     padding-left: 120px;
@@ -211,4 +206,17 @@ body {
 
 .numberWithArrows td {
 	padding: 3px;
+}
+
+.description {
+	width: 80%;
+	font-size: 24px;
+	margin-bottom: 10px;
+    text-align: center;
+}
+
+.txt-msg-countdown {
+	font-size: 62px;
+	font-weight: bold;
+	margin-top: 10px;
 }

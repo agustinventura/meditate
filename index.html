@@ -13,6 +13,7 @@
 <script src="js/framework.js"></script>
 <script src="js/welcomeScreen.js"></script>
 <script src="js/timeScreen.js"></script>
+<script src="js/countdownScreen.js"></script>
 </head>
 
 <body>
@@ -68,6 +69,14 @@
 				</div>
 			</div>
 			<button id="timeDone" class="btnbottom">Ya</button>
+		</div>
+	</div>
+	<div id="countdownScreen" class="clock">
+		<div class="container">
+			<p class="description">Vas a meditar <span id="meditationMinutes">10</span> minutos.</p>
+			<p class="description">Te avisaremos cuando hayan acabado.</p>
+			<p class="description">Siéntate en una postura cómoda, con la espalda erguida.</p>
+			<p id="countdownSeconds" class="txt-msg-countdown">10</p>
 		</div>
 	</div>
 </body>

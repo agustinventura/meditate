@@ -6,7 +6,7 @@ TimesEnum = {
 var times = new Map();
 var meditationTime = 10;
 var selectedMeditationTime = TimesEnum.MINUTES;
-var countdownSeconds = 5;
+var countdownSeconds = 10;
 
 function init() {
 	setBackKeyListener();
