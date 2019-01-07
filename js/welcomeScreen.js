@@ -6,8 +6,8 @@ function showWelcomeScreen() {
 }
 
 function setWelcomeScreenListeners() {
-	//setRotaryListener(setsChange);
-	//setClickListener($("#start"), showTimeScreen);
+	setRotaryListener(showTimeScreen);
+	setClickListener($("#start"), showTimeScreen);
 }
 
 function setWelcomeScreenText() {

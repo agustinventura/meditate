@@ -1,16 +1,16 @@
 TimesEnum = {
-	SECONDS: "seconds",
-	DECASECONDS: "decaseconds"
+	MINUTES: "minutes",
+	DECAMINUTES: "decaminutes"
 }
 
 var times = new Map();
-var meditationTime = 60;
-var selectedMeditationTime = TimesEnum.SECONDS;
+var meditationTime = 10;
+var selectedMeditationTime = TimesEnum.MINUTES;
 var countdownSeconds = 5;
 
 function init() {
 	setBackKeyListener();
-	//initRestTime();
+	initTime();
 	showWelcomeScreen();
 }
 

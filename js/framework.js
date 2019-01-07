@@ -1,5 +1,6 @@
 function hideAllScreens() {
 	$("#welcomeScreen").hide();
+	$("#timeScreen").hide();
 }
 
 function setClickListener(element, listener) {
@@ -30,6 +31,9 @@ function goBack(activeDivId) {
 	switch (activeDivId) {
 		case "welcomeScreen":
 			exit();
+			break;
+		case "timeScreen":
+			showWelcomeScreen();
 			break;
 	}
 }

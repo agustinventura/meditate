@@ -12,6 +12,7 @@
 <script src="js/meditate.js"></script>
 <script src="js/framework.js"></script>
 <script src="js/welcomeScreen.js"></script>
+<script src="js/timeScreen.js"></script>
 </head>
 
 <body>
@@ -25,6 +26,48 @@
 				</div>
 			</div>
 			<button id="start" class="btnbottom">Empezar</button>
+		</div>
+	</div>
+	<div id="timeScreen" class="clock">
+		<div class="container">
+			<div id="timeScreenTitle" class="titletop">
+				<div class="decrease">
+					<img id="decreaseTime" src="./img/decrease.png"
+						alt="Decrease time" />
+				</div>
+				<p>Minutos</p>
+				<div class="increase">
+					<img id="increaseTime" src="./img/increase.png"
+						alt="Increase time" />
+				</div>
+			</div>
+			<div class="txt">
+				<div class="magnitude">
+					<table class="numberWithArrows">
+						<tr>
+							<td><img id="upArrowTimeDecaminutes" src="./img/up.png"
+								alt="Increase decaminutes" /></td>
+							<td><img id="upArrowTimeMinutes"
+								src="./img/up.png" alt="Increase minutes" /></td>
+						</tr>
+						<tr>
+							<td><span id="decaminutes" class="txt-msg-center">0</span></td>
+							<td><span id="minutes"
+								class="txt-msg-center">0</span></td>
+						</tr>
+						<tr>
+							<td><img id="downArrowTimeDecaminutes"
+								src="./img/down.png" alt="Decrease decaminutes" /></td>
+							<td><img id="downArrowTimeMinutes"
+								src="./img/down.png" alt="Decrease minutes" /></td>
+						</tr>
+					</table>
+				</div>
+				<div class="unit">
+					<span id="minutes" class="txt-msg-center">min</span>
+				</div>
+			</div>
+			<button id="timeDone" class="btnbottom">Ya</button>
 		</div>
 	</div>
 </body>
