@@ -2,7 +2,7 @@ var countdownInterval = null;
 
 function showCountdownScreen() {
 	hideAllScreens();
-	countdownSeconds = 10;
+	countdownSeconds = 5;
 	$("#meditationMinutes").text(meditationMinutes);
 	$("#countdownSeconds").text(countdownSeconds);
 	$("#countdownScreen").show();

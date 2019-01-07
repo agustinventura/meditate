@@ -3,6 +3,8 @@ function hideAllScreens() {
 	$("#timeScreen").hide();
 	$("#countdownScreen").hide();
 	$("#meditationScreen").hide();
+	$("#pauseScreen").hide();
+	$("#endScreen").hide();
 }
 
 function setClickListener(element, listener) {
@@ -41,11 +43,19 @@ function goBack(activeDivId) {
 			showCountdownScreen();
 			break;
 		case "meditationScreen":
+			meditationPause();
+			break;
+		case "pauseScreen":
+			meditationResume();
+			break;
+		case "endScreen":
+			showWelcomeScreen();
 			break;
 	}
 }
 
 function exit() {
+	tizen.power.release("SCREEN");
     tizen.application.getCurrentApplication().exit();
 }
 

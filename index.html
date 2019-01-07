@@ -15,6 +15,8 @@
 <script src="js/timeScreen.js"></script>
 <script src="js/countdownScreen.js"></script>
 <script src="js/meditationScreen.js"></script>
+<script src="js/pauseScreen.js"></script>
+<script src="js/endScreen.js"></script>
 </head>
 
 <body>
@@ -95,6 +97,24 @@
 				
 			</div>
 			<button id="meditationDone" class="btnbottom">Terminar</button>
+		</div>
+	</div>
+	<div id="pauseScreen" class="clock">
+		<div class="container">
+			<button id="exit" class="btnleft">Si</button>
+			<div class="txt">
+				<p class="txt-msg-center">Pausa</p>
+				<p class="txt-msg-center">&nbsp;</p>
+				<p class="txt-msg-center">¿Salir?</p>
+			</div>
+			<button id="continue" class="btnright">No</button>
+		</div>
+	</div>
+	<div id="endScreen" class="clock">
+		<div class="container">
+			<p class="description">Enhorabuena, has meditado <span id="meditationSessions">0</span> veces.</p>
+			<p class="description">En total has meditado <span id="totalMeditationMinutes">0</span> minutos.</p>
+			<p class="description">Sigue así, te esperamos mañana.</p>
 		</div>
 	</div>
 </body>

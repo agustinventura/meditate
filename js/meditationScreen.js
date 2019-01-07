@@ -24,7 +24,14 @@ function setMeditationScreenListeners() {
 
 function meditationPause() {
 	stopMeditationInterval();
-	//showPauseScreen();
+	showPauseScreen();
+}
+
+function meditationResume() {
+	hideAllScreens();
+	setMeditationScreenListeners();
+	startMeditationInterval();
+	$("#meditationScreen").show();
 }
 
 function stopMeditationInterval() {
@@ -33,6 +40,7 @@ function stopMeditationInterval() {
 }
 
 function startMeditation() {
+	tizen.power.request("SCREEN", "SCREEN_NORMAL");
 	meditationStartAudio.load();
 	meditationStartAudio.play();
 	meditationTime = new Date(meditationMinutes*60*1000);
@@ -52,7 +60,11 @@ function refreshMeditationTime() {
 }
 
 function meditationEnd() {
+	tizen.power.release("SCREEN");
+	stopMeditationInterval();
 	navigator.vibrate(1000);
+	updateMeditationData();
+	showEndScreen();
 }
 
 function setCurrentRestFormattedTime() {
@@ -60,4 +72,13 @@ function setCurrentRestFormattedTime() {
 	$("#meditationScreenMinutes").text(formattedMinutes);
 	var formattedSeconds = preprendZerosIfNeeded(meditationTime.getSeconds(), 2);
 	$("#meditationScreenSeconds").text(formattedSeconds);
+}
+
+function updateMeditationData() {
+	var meditationSessions = Number(localStorage.getItem("meditationSessions"));
+	meditationSessions++;
+	localStorage.setItem("meditationSessions", meditationSessions);
+	var totalMeditationMinutes = Number(localStorage.getItem("totalMeditationMinutes"));
+	totalMeditationMinutes += Number(meditationMinutes);
+	localStorage.setItem("totalMeditationMinutes", totalMeditationMinutes);
 }

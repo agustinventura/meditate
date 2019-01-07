@@ -101,7 +101,7 @@ body {
     width: 200px;
     font-size: 32px;
     font-weight: bold;
-    border-right: 1px solid #BF1111;
+    border-right: 1px solid #4FA87B;
     right: 270px;
     padding-right: 40px;
 }
@@ -125,7 +125,7 @@ body {
     width: 200px;
     font-size: 32px;
     font-weight: bold;
-    border-left: 1px solid #BF1111;
+    border-left: 1px solid #4FA87B;
     left: 270px;
     padding-left: 20px;
 }
