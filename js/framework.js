@@ -2,6 +2,7 @@ function hideAllScreens() {
 	$("#welcomeScreen").hide();
 	$("#timeScreen").hide();
 	$("#countdownScreen").hide();
+	$("#meditationScreen").hide();
 }
 
 function setClickListener(element, listener) {
@@ -38,6 +39,8 @@ function goBack(activeDivId) {
 			break;
 		case "countdownScreen":
 			showCountdownScreen();
+			break;
+		case "meditationScreen":
 			break;
 	}
 }

@@ -170,10 +170,10 @@ body {
 
 .titletop table {
 	position: absolute;
-    top: 115px;
+    top: 130px;
     left: 100px;
     width: 150px;
-    font-size: 32px;
+    font-size: 48px;
     font-weight: bold;
     text-align: center;	
 }
@@ -209,7 +209,7 @@ body {
 }
 
 .description {
-	width: 80%;
+	width: 70%;
 	font-size: 24px;
 	margin-bottom: 10px;
     text-align: center;

@@ -3,7 +3,7 @@ var countdownInterval = null;
 function showCountdownScreen() {
 	hideAllScreens();
 	countdownSeconds = 10;
-	$("#meditationMinutes").text(meditationTime);
+	$("#meditationMinutes").text(meditationMinutes);
 	$("#countdownSeconds").text(countdownSeconds);
 	$("#countdownScreen").show();
 	countdown(countdownSeconds);
@@ -29,7 +29,7 @@ function refreshSeconds() {
     countdownSeconds--;
     if (countdownSeconds === 0) {
     	stopInterval();
-        //showCurrentSetScreen();
+        showMeditationScreen();
     } else {
     	$("#countdownSeconds").text(countdownSeconds);
     }

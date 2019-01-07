@@ -14,6 +14,7 @@
 <script src="js/welcomeScreen.js"></script>
 <script src="js/timeScreen.js"></script>
 <script src="js/countdownScreen.js"></script>
+<script src="js/meditationScreen.js"></script>
 </head>
 
 <body>
@@ -68,7 +69,7 @@
 					<span id="minutes" class="txt-msg-center">min</span>
 				</div>
 			</div>
-			<button id="timeDone" class="btnbottom">Ya</button>
+			<button id="timeDone" class="btnbottom">Meditar</button>
 		</div>
 	</div>
 	<div id="countdownScreen" class="clock">
@@ -77,6 +78,23 @@
 			<p class="description">Te avisaremos cuando hayan acabado.</p>
 			<p class="description">Siéntate en una postura cómoda, con la espalda erguida.</p>
 			<p id="countdownSeconds" class="txt-msg-countdown">10</p>
+		</div>
+	</div>
+	<div id="meditationScreen" class="clock">
+		<div class="container">
+			<div id="timeScreenTitle" class="titletop">
+				<table>
+					<tr>
+						<td id="meditationScreenMinutes">00</td>
+						<td>:</td>
+						<td id="meditationScreenSeconds">00</td>
+					</tr>
+				</table>
+			</div>
+			<div class="txt">
+				
+			</div>
+			<button id="meditationDone" class="btnbottom">Terminar</button>
 		</div>
 	</div>
 </body>

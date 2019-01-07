@@ -4,7 +4,7 @@ TimesEnum = {
 }
 
 var times = new Map();
-var meditationTime = 10;
+var meditationMinutes = 10;
 var selectedMeditationTime = TimesEnum.MINUTES;
 var countdownSeconds = 10;
 

@@ -84,6 +84,6 @@ function increaseTime() {
 }
 
 function setTime() {
-	meditationTime = times.get(TimesEnum.DECAMINUTES) + "" + times.get(TimesEnum.MINUTES);
+	meditationMinutes = times.get(TimesEnum.DECAMINUTES) + "" + times.get(TimesEnum.MINUTES);
 	showCountdownScreen();
 }
