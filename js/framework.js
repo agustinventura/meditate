@@ -40,7 +40,6 @@ function goBack(activeDivId) {
 			showWelcomeScreen();
 			break;
 		case "countdownScreen":
-			showCountdownScreen();
 			break;
 		case "meditationScreen":
 			meditationPause();

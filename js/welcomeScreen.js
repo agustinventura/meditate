@@ -16,7 +16,7 @@ function setWelcomeScreenText() {
 	var meditationSessions = localStorage.getItem("meditationSessions");
 	if (meditationSessions > 0) {
 		$("#subsequentMedidations").show();
-		$("#meditationSessionNumber").text(meditationSessions);
+		$("#meditationSessionNumber").text(meditationSessions+1);
 	} else {
 		$("#firstMedidation").show();
 	}
