@@ -40,7 +40,7 @@ function stopMeditationInterval() {
 }
 
 function startMeditation() {
-	tizen.power.request("SCREEN", "SCREEN_NORMAL");
+	//tizen.power.request("SCREEN", "SCREEN_NORMAL");
 	meditationStartAudio.load();
 	meditationStartAudio.play();
 	meditationTime = new Date(meditationMinutes*60*1000);
@@ -60,7 +60,7 @@ function refreshMeditationTime() {
 }
 
 function meditationEnd() {
-	tizen.power.release("SCREEN");
+	//tizen.power.release("SCREEN");
 	stopMeditationInterval();
 	navigator.vibrate(1000);
 	updateMeditationData();
