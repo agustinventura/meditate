@@ -13,7 +13,7 @@ function setWelcomeScreenListeners() {
 function setWelcomeScreenText() {
 	$("#firstMedidation").hide();
 	$("#subsequentMedidations").hide();
-	var meditationSessions = localStorage.getItem("meditationSessions");
+	var meditationSessions = Number(localStorage.getItem("meditationSessions"));
 	if (meditationSessions > 0) {
 		$("#subsequentMedidations").show();
 		$("#meditationSessionNumber").text(meditationSessions+1);
