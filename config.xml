@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://www.digitalsingular.com/Meditate" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="VUsqea13Go.Meditate" package="VUsqea13Go" required_version="2.3.2"/>
-    <author href="http://www.digitalsingular.com" email="agustinventura@gmail.com">Agustín Ventura Carrasco</author>
+    <tizen:application id="nletxKMlf4.Meditate" package="nletxKMlf4" required_version="3.0"/>
+    <author href="http://www.digitalsingular.com" email="agustinventura@digitalsingular.com">Agustín Ventura Carrasco</author>
     <content src="index.html"/>
+    <description>Meditate es una aplicación para facilitarte las sesiones de meditación. Te permite escoger los minutos que deseas meditar y te avisa al terminar. Además te anima recordándote las sesiones y minutos que has meditado.</description>
     <description xml:lang="es-es">Meditate es una aplicación para facilitarte las sesiones de meditación. Te permite escoger los minutos que deseas meditar y te avisa al terminar. Además te anima recordándote las sesiones y minutos que has meditado.</description>
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="icon.png"/>
