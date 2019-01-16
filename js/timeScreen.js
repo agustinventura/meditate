@@ -5,6 +5,7 @@ function initTime() {
 
 function showTimeScreen() {
 	hideAllScreens();
+	selectedTime = TimesEnum.MINUTES;
 	setTimeScreenListeners();
 	setTimesText();
     $("#timeScreen").show();
@@ -17,6 +18,7 @@ function setTimesText() {
 }
 
 function setTimeScreenListeners() {
+	setRotaryListener(timeChange)
 	setClickListener($("#decreaseTime"), decreaseTime);
 	setClickListener($("#increaseTime"), increaseTime);
 	setClickListener($("#upArrowTimeDecaminutes"), increaseDecaminutes);
