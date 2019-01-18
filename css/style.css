@@ -179,8 +179,18 @@ body {
 }
 
 .txt {
+	position: absolute;
+	top: 100px;
 	width: 100%;
 	text-align: center;
+}
+
+.txt-alone {
+	position: absolute;
+	top: 120px;
+	width: 90%;
+	text-align: center;
+	padding-left: 20px;
 }
 
 .txt-msg {
@@ -192,16 +202,8 @@ body {
 	font-weight: bold;
 }
 
-.magnitude {
-	float: left;
-    padding-left: 120px;
-}
-
-.unit {
-	width: 20%;
-    float: right;
-    padding-top: 65px;
-    padding-right: 25px;
+.numberWithArrows {
+	margin-left: 120px;	
 }
 
 .numberWithArrows td {
@@ -209,7 +211,6 @@ body {
 }
 
 .description {
-	width: 70%;
 	font-size: 24px;
 	margin-bottom: 10px;
     text-align: center;
@@ -220,26 +221,3 @@ body {
 	font-weight: bold;
 	margin-top: 10px;
 }
-
-.circle {
-	border-radius: 50%;
-    background-color: #86D19E;
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    left: 140px;
-    top: 145px;
-    opacity: 0;
-    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
-  }
-
-  @keyframes scaleIn {
-	from {
-	  transform: scale(.5, .5);
-	  opacity: .5;
-	}
-	to {
-	  transform: scale(2.5, 2.5);
-	  opacity: 0;
-	}
-  }

@@ -1,6 +1,6 @@
 function initTime() {
-	times.set(TimesEnum.MINUTES, 0);
-	times.set(TimesEnum.DECAMINUTES, 1);
+	times[TimesEnum.MINUTES] = 0;
+	times[TimesEnum.DECAMINUTES] = 1;
 }
 
 function showTimeScreen() {
@@ -13,7 +13,7 @@ function showTimeScreen() {
 
 function setTimesText() {
 	for (var time in TimesEnum) {
-		$("#"+TimesEnum[time]).text(times.get(TimesEnum[time]));
+		$("#"+TimesEnum[time]).text(times[TimesEnum[time]]);
 	}
 }
 
@@ -68,24 +68,24 @@ function timeChange(ev) {
 }
 
 function decreaseTime() {
-	var time = times.get(selectedTime);
+	var time = times[selectedTime];
     if (time > 0) {
     	time--;
-    	times.set(selectedTime, time);
-        $("#"+selectedTime).text(times.get(selectedTime));
+    	times[selectedTime] = time;
+        $("#"+selectedTime).text(times[selectedTime]);
     }
 }
 
 function increaseTime() {
-	var time = times.get(selectedTime);
+	var time = times[selectedTime];
     if (time < 9) {
         time++;
-        times.set(selectedTime, time);
-        $("#"+selectedTime).text(times.get(selectedTime));
+        times[selectedTime] = time;
+        $("#"+selectedTime).text(times[selectedTime]);
     }
 }
 
 function setTime() {
-	meditationMinutes = times.get(TimesEnum.DECAMINUTES) + "" + times.get(TimesEnum.MINUTES);
+	meditationMinutes = times[TimesEnum.DECAMINUTES] + "" + times[TimesEnum.MINUTES];
 	showCountdownScreen();
 }

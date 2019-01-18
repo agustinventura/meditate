@@ -3,7 +3,10 @@ TimesEnum = {
 	DECAMINUTES: "decaminutes"
 }
 
-var times = new Map();
+var times = {
+		minutes: 0,
+		decaminutes: 0
+};
 var meditationMinutes = 10;
 var selectedMeditationTime = TimesEnum.MINUTES;
 var countdownSeconds = 10;

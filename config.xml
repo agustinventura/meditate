@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://www.digitalsingular.com/Meditate" version="1.0.0" viewmodes="maximized">
-    <tizen:application id="nletxKMlf4.Meditate" package="nletxKMlf4" required_version="3.0"/>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://www.digitalsingular.com/Meditate" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="nletxKMlf4.Meditate" package="nletxKMlf4" required_version="2.3.2"/>
     <author href="http://www.digitalsingular.com" email="agustinventura@digitalsingular.com">Agustín Ventura Carrasco</author>
     <content src="index.html"/>
     <description>Meditate es una aplicación para facilitarte las sesiones de meditación. Te permite escoger los minutos que deseas meditar y te avisa al terminar. Además te anima recordándote las sesiones y minutos que has meditado.</description>
@@ -11,4 +11,5 @@
     <name xml:lang="es-es">Meditate</name>
     <tizen:privilege name="http://tizen.org/privilege/power"/>
     <tizen:profile name="wearable"/>
+    <tizen:setting background-support="disable" encryption="disable" hwkey-event="enable"/>
 </widget>
