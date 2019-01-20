@@ -193,6 +193,14 @@ body {
 	padding-left: 20px;
 }
 
+.txt-pause {
+	position: absolute;
+	top: 100px;
+	left: 110px;
+	width: 40%;
+	text-align: center;
+}
+
 .txt-msg {
 	font-size: 32px;
 }

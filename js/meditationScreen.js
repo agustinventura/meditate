@@ -1,10 +1,12 @@
 var meditationStartAudio = null;
 var meditationInterval = null;
 var meditationTime = null;
+var circleId = 0;
 
 function showMeditationScreen() {
 	hideAllScreens();
 	loadMeditationStartAudio();
+	hideGraphics();
 	setMeditationScreenListeners();
 	stopMeditationInterval();
 	startMeditation();
@@ -17,6 +19,11 @@ function loadMeditationStartAudio() {
     meditationStartAudio.name = 'bell';
 }
 
+function hideGraphics() {
+	for (i = 0; i<5; i++) {
+		$("#circle"+i).hide();
+	}
+}
 function setMeditationScreenListeners() {
 	setRotaryListener(meditationPause);
 	setClickListener($("#meditationDone"), meditationPause);
@@ -53,6 +60,9 @@ function startMeditationInterval() {
 
 function refreshMeditationTime() {
 	meditationTime.setTime(meditationTime.getTime()-1000);
+	circleId++;
+	hideGraphics();
+	$("#circle"+circleId%4).show();
 	if (meditationTime.getTime() === 0) {
 		meditationEnd();
 	}
